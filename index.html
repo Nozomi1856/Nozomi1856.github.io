@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratheeksha Aravind | AI Research</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #e4e4e4;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 0 40px;
+    }
+
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e94560, #533483);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      font-size: 3.5rem;
+      box-shadow: 0 10px 40px rgba(233, 69, 96, 0.3);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #e94560, #00d9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #a0a0a0;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .section h2 {
+      color: #e94560;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .project-card {
+      background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(83, 52, 131, 0.1));
+      border-radius: 12px;
+      padding: 25px;
+      border-left: 4px solid #e94560;
+    }
+
+    .project-card h3 {
+      color: #00d9ff;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: rgba(0, 217, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stat-box .number {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #00d9ff;
+    }
+
+    .stat-box .label {
+      font-size: 0.85rem;
+      color: #a0a0a0;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tag {
+      background: rgba(233, 69, 96, 0.2);
+      color: #e94560;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #e4e4e4;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #e94560, #533483);
+      transition: transform 0.3s, box-shadow 0.3s;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+    }
+
+    .highlight {
+      color: #00d9ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">🧠</div>
+      <h1>Hi, I'm Aravind!</h1>
+      <p class="tagline">Student Researcher • Neural Architecture Search • Quality-Diversity Optimization</p>
+    </header>
+
+    <section class="section">
+      <h2>🚀 Featured Project</h2>
+      <div class="project-card">
+        <h3>NAG-ME-QD: Neural Architecture Generation with MAP-Elites</h3>
+        <p>
+          A novel neural architecture search system that automatically discovers diverse, high-performing 
+          neural network architectures. Combines evolutionary <span class="highlight">MAP-Elites optimization</span> 
+          with <span class="highlight">zero-shot evaluation</span> methods across convolutional, transformer, 
+          and recurrent network paradigms.
+        </p>
+        
+        <div class="stats">
+          <div class="stat-box">
+            <div class="number">96.8%</div>
+            <div class="label">MNIST Accuracy</div>
+          </div>
+          <div class="stat-box">
+            <div class="number">74.9%</div>
+            <div class="label">CIFAR-10 Accuracy</div>
+          </div>
+          <div class="stat-box">
+            <div class="number">100-200×</div>
+            <div class="label">Speedup</div>
+          </div>
+          <div class="stat-box">
+            <div class="number">32D</div>
+            <div class="label">Behavior Space</div>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">MAP-Elites</span>
+          <span class="tag">Zero-Shot NAS</span>
+          <span class="tag">Quality-Diversity</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">Transformers</span>
+          <span class="tag">RNNs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>💡 What It Does</h2>
+      <p>
+        Describe your desired neural network in <span class="highlight">natural language</span>, and NAG-ME-QD 
+        automatically generates optimized architectures—no deep ML expertise required. The system discovers 
+        not just one solution, but a diverse archive of high-performing networks suited for different use cases.
+      </p>
+      <br>
+      <p>
+        <strong>Applications:</strong> Medical imaging, autonomous vehicles, scientific computing, 
+        and democratizing AI development for everyone.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>🛠️ Technical Highlights</h2>
+      <ul style="margin-left: 20px;">
+        <li>Multi-paradigm search: CNNs, Transformers, and Recurrent networks</li>
+        <li>Three evaluation modes: Zero-shot proxies, minimal training, and full training</li>
+        <li>Zero-shot metrics: SynFlow, NASWOT, Jacob_cov, Zen-Score</li>
+        <li>Text-to-architecture encoder for natural language interface</li>
+        <li>Smart mutation with Thompson sampling and curriculum learning</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>📚 About Me</h2>
+      <p>
+        I'm a student researcher on a 10-month journey from learning AI fundamentals to creating 
+        novel research contributions. This project taught me that persistence pays off—debugging 
+        became detective work, and every challenge was an opportunity to ask better questions.
+      </p>
+    </section>
+
+    <div class="links">
+      <a href="https://github.com/yourusername">GitHub Profile</a>
+      <a href="https://github.com/yourusername/nag-mapelites-qd">View Project</a>
+    </div>
+
+    <footer>
+      <p>Built with curiosity and lots of debugging 🔍</p>
+    </footer>
+  </div>
+</body>
+</html>
